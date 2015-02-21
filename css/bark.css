@@ -28,6 +28,10 @@ body {
 .hidden {
   display: none;
 }
+.message-box {
+  overflow-y: auto;
+  max-height: 500px;
+}
 /* 'widths' sub menu */
 #layoutdims {
   clear: both;
