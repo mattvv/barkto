@@ -132,6 +132,7 @@ body {
   color: #aaaaaa;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#43484d, #373b3f);
+  background-image: linear-gradient(#43484d, #373b3f);
 }
 .btn:focus {
   color: #aaaaaa;
@@ -144,15 +145,18 @@ body {
 .btn.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#505357, #5c6064);
+  background-image: linear-gradient(#505357, #5c6064);
 }
 .btn.selected:hover,
 .btn.selected:hover:hover {
   background-image: -webkit-linear-gradient(#5c6064, #505357);
+  background-image: linear-gradient(#5c6064, #505357);
 }
 .btn.btn-primary {
   color: #ffffff;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#007acc, #006ab3);
+  background-image: linear-gradient(#007acc, #006ab3);
 }
 .btn.btn-primary:focus {
   color: #ffffff;
@@ -165,15 +169,18 @@ body {
 .btn.btn-primary.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#0089e6, #0098ff);
+  background-image: linear-gradient(#0089e6, #0098ff);
 }
 .btn.btn-primary.selected:hover,
 .btn.btn-primary.selected:hover:hover {
   background-image: -webkit-linear-gradient(#0098ff, #0089e6);
+  background-image: linear-gradient(#0098ff, #0089e6);
 }
 .btn.btn-info {
   color: #ffffff;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#007acc, #006ab3);
+  background-image: linear-gradient(#007acc, #006ab3);
 }
 .btn.btn-info:focus {
   color: #ffffff;
@@ -186,15 +193,18 @@ body {
 .btn.btn-info.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#0089e6, #0098ff);
+  background-image: linear-gradient(#0089e6, #0098ff);
 }
 .btn.btn-info.selected:hover,
 .btn.btn-info.selected:hover:hover {
   background-image: -webkit-linear-gradient(#0098ff, #0089e6);
+  background-image: linear-gradient(#0098ff, #0089e6);
 }
 .btn.btn-success {
   color: #ffffff;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#129c4e, #0f8543);
+  background-image: linear-gradient(#129c4e, #0f8543);
 }
 .btn.btn-success:focus {
   color: #ffffff;
@@ -207,15 +217,18 @@ body {
 .btn.btn-success.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#14b35a, #17ca65);
+  background-image: linear-gradient(#14b35a, #17ca65);
 }
 .btn.btn-success.selected:hover,
 .btn.btn-success.selected:hover:hover {
   background-image: -webkit-linear-gradient(#17ca65, #14b35a);
+  background-image: linear-gradient(#17ca65, #14b35a);
 }
 .btn.btn-warning {
   color: #ffffff;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#f89400, #df8500);
+  background-image: linear-gradient(#f89400, #df8500);
 }
 .btn.btn-warning:focus {
   color: #ffffff;
@@ -228,15 +241,18 @@ body {
 .btn.btn-warning.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#ffa013, #ffaa2c);
+  background-image: linear-gradient(#ffa013, #ffaa2c);
 }
 .btn.btn-warning.selected:hover,
 .btn.btn-warning.selected:hover:hover {
   background-image: -webkit-linear-gradient(#ffaa2c, #ffa013);
+  background-image: linear-gradient(#ffaa2c, #ffa013);
 }
 .btn.btn-error {
   color: #ffffff;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#990000, #800000);
+  background-image: linear-gradient(#990000, #800000);
 }
 .btn.btn-error:focus {
   color: #ffffff;
@@ -249,10 +265,12 @@ body {
 .btn.btn-error.selected:hover {
   color: #ffffff;
   background-image: -webkit-linear-gradient(#b30000, #cc0000);
+  background-image: linear-gradient(#b30000, #cc0000);
 }
 .btn.btn-error.selected:hover,
 .btn.btn-error.selected:hover:hover {
   background-image: -webkit-linear-gradient(#cc0000, #b30000);
+  background-image: linear-gradient(#cc0000, #b30000);
 }
 .caret {
   border-top: 5px solid #fff;
