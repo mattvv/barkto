@@ -6,10 +6,10 @@ body {
   color: #aaaaaa;
   font-size: 18px;
   margin: 0px;
-  font-family: 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.5rem;
 }
 .scrollbars-visible-always /deep/ ::-webkit-scrollbar {
@@ -312,6 +312,20 @@ code {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
   background: rgba(255, 255, 255, 0.07);
   border-radius: 2px;
+}
+.text-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 10px;
+}
+.font-alt {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.jumbotron h1 {
+  font-size: 48px;
 }
 .selected {
   font-weight: normal;
@@ -646,4 +660,60 @@ div.modal .select-list ol.list-group li:hover,
 div.modal.select-list ol.list-group li:hover,
 .overlay.select-list ol.list-group li:hover {
   background-color: rgba(255, 255, 255, 0.07);
+}
+.widget .widget-title {
+  border-bottom: 1px dotted #c2c2c2;
+  font-size: 14px;
+  padding: 0 0 10px;
+  margin: 0 0 15px;
+}
+.widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.widget .icon-list li {
+  padding: 5px 0;
+}
+.widget .icon-list li a:before {
+  content: "\00BB";
+  color: #666666;
+  padding-right: 5px;
+}
+.widget-posts li {
+  margin: 0 0 15px;
+}
+.widget-posts li:last-child {
+  margin: 0;
+}
+.widget-posts-image {
+  float: left;
+  width: 64px;
+}
+.widget-posts-body {
+  margin-left: 74px;
+}
+.footer {
+  padding: 10px 0;
+}
+.copyright {
+  margin: 0;
+}
+.footer-social-links {
+  text-align: right;
+}
+.footer-social-links a {
+  display: inline-block;
+  padding: 0 6px;
+}
+.ajax-response {
+  text-align: center;
+}
+.divider-w {
+  border-top: 1px solid #eaeaea;
+  margin: 0;
+}
+.divider-d {
+  border-top: 1px solid #434343;
+  margin: 0;
 }
