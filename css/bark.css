@@ -130,6 +130,7 @@ body {
   margin-bottom: 0px;
 }
 .btn {
+  margin-right: 1px;
   color: #aaaaaa;
   background-color: transparent;
   background-image: -webkit-linear-gradient(#43484d, #373b3f);
@@ -363,6 +364,12 @@ body {
 .message-section .talk {
   padding: 12px 45px;
   font-size: 13px;
+}
+.room-section .btn {
+  padding: 4px 5px;
+}
+.room-section .btn.btn-xs.talk {
+  padding: 4px 19px;
 }
 .caret {
   border-top: 5px solid #fff;
