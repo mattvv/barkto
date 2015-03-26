@@ -360,6 +360,10 @@ body {
   font-size: 10px;
   letter-spacing: 0;
 }
+.message-section .talk {
+  padding: 12px 45px;
+  font-size: 13px;
+}
 .caret {
   border-top: 5px solid #fff;
   margin-top: -1px;
