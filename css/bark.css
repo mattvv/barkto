@@ -390,6 +390,13 @@ h2 {
 h3 {
   font-size: 1.2em;
 }
+h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 2px;
+  font-family: "Roboto Condensed", sans-serif;
+}
 p {
   line-height: 1.6;
   margin-bottom: 15px;
