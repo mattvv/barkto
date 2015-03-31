@@ -523,6 +523,10 @@ code {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
+.list-group .list-item.title,
+.list-tree .list-item.title {
+  padding-bottom: 0px;
+}
 .list-group li:not(.list-nested-item),
 .list-tree li:not(.list-nested-item),
 .list-group li.list-nested-item > .list-item,
@@ -716,6 +720,9 @@ li.ui-sortable-helper {
 }
 .user-list.talking {
   color: #ccc;
+}
+.user-list.chatting {
+  color: #999;
 }
 a.list-group-item .list-group-item-heading.message-action {
   color: rgba(0, 122, 204, 0.75);
