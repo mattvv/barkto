@@ -32,6 +32,9 @@ body {
   overflow-y: auto;
   max-height: 500px;
 }
+#mixedaudio {
+  display: none;
+}
 /* 'widths' sub menu */
 #layoutdims {
   clear: both;
