@@ -737,7 +737,7 @@ li.ui-sortable-helper {
 div.list-group-item {
   color: #333;
 }
-a.list-group-item .list-group-item-heading.message-action {
+div.list-group-item .list-group-item-heading.message-action {
   color: rgba(0, 122, 204, 0.75);
 }
 div.modal,
