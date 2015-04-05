@@ -734,6 +734,9 @@ li.ui-sortable-helper {
 .user-list.chatting {
   color: #999;
 }
+div.list-group-item {
+  color: #333;
+}
 a.list-group-item .list-group-item-heading.message-action {
   color: rgba(0, 122, 204, 0.75);
 }
