@@ -928,3 +928,13 @@ div.modal.select-list ol.list-group li:hover,
 .message-input-wrapper {
   margin-top: 40px;
 }
+.modal-container {
+  position: relative;
+}
+.modal-container .modal,
+.modal-container .modal-backdrop {
+  position: absolute;
+}
+.message-section {
+  min-height: 400px;
+}
