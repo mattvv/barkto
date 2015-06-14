@@ -1379,7 +1379,7 @@ advbark
 	outline: none;
 	padding: 0 65px 0 30px;
 	color: #5c6976;
-	font-family: 'Gotham M';
+	font-family: 'Gotham B';
 	font-size: 14px;
 }
 
@@ -1502,4 +1502,6 @@ advbark
   line-height: 40px;
   font-family: 'Gotham B';
   color: #fff;
+  margin-left: 390px;
+  text-align: center;
 }
