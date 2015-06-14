@@ -1103,6 +1103,7 @@ a.sign-in__options-left {
 	color: #FFF;
 	outline: none;
 	cursor: pointer;
+  border-color: transparent
 }
 
 
