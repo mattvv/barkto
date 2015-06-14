@@ -1336,6 +1336,10 @@ advbark
 }
 
 
+.section-barkadv__content a {
+	color: #05a7f0;
+}
+
 .section-aboutbark__btn a {
 	background: #009dc7;
 	height: 45px;
@@ -1486,4 +1490,16 @@ advbark
 
 #micSettings {
   display: none;
+}
+
+.topError {
+  line-height: 40px;
+  font-family: 'Gotham B';
+  color: rgb(78, 91, 105);
+}
+
+.bottomError {
+  line-height: 40px;
+  font-family: 'Gotham B';
+  color: #fff;
 }
