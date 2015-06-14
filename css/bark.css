@@ -1190,7 +1190,7 @@ a.sign-in__options-left {
 .intro__innerp2 {
 	font-family: 'Gotham M';
 	font-size: 15px;
-	color: #5c6976;
+	color: #8EA2B8;
 }
 .header-inner__gstart{
 	padding: 40px 0;
@@ -1215,7 +1215,7 @@ a.sign-in__options-left {
 
 .gstart__form-elm::-webkit-input-placeholder {
 	font-style: italic;
-	color: #a9abac;
+	color: #5c6976;
 }
 .gstart__form-elm:-moz-placeholder {
 	font-style: italic;
