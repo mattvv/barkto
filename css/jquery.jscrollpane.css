@@ -1,0 +1,127 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.menu-left .jspContainer,
+.menu-right .jspContainer
+{
+	position: relative;
+	outline: none;
+}
+
+.menu-left .jspPane,
+.menu-right .jspPane
+{
+	position: absolute;
+	width: 100% !important;
+	outline: none;
+	margin: 0 !important;
+}
+
+.menu-left .jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 4px;
+	height: 100%;
+	background: transparent;
+}
+.menu-right .jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background: transparent;
+}
+.menu-left .jspHorizontalBar,
+.menu-right .jspHorizontalBar
+{
+	display: none;
+}
+
+.menu-left .jspCap,
+.menu-right .jspCap
+{
+	display: none;
+}
+
+
+.menu-left .jspTrack,
+.menu-right .jspTrack
+{
+	background: transparent;
+	position: relative;
+}
+
+.menu-left .jspDrag,
+.menu-right .jspDrag
+{
+	background: #485766;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	border-radius: 2px;
+	opacity: 0;
+	transition: opacity ease 0.1s;
+}
+
+.menu-left:hover .jspDrag,
+.menu-right:hover .jspDrag
+{
+	opacity: 1;
+}
+
+
+.menu-left .jspArrow,
+.menu-right .jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.menu-left .jspArrow.jspDisabled,
+.menu-right .jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.menu-left .jspVerticalBar .jspArrow,
+.menu-right .jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+
+
+.menu-left .jspVerticalBar .jspArrow:focus,
+.menu-right .jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.menu-left .jspCorner,
+.menu-right .jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
