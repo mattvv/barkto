@@ -190,7 +190,8 @@ body{
 .page-content__actions {
 	height: 84px;
 	text-align: center;
-	font-size: 0;
+	font-size: 12;
+  color: #fff;
 	border-bottom: 1px solid #384757;
 	background: #25313E;
 	position: fixed;
@@ -1093,7 +1094,6 @@ a.sign-in__options-left {
 	width: 110px;
 	border-radius: 5px;
 	height: 50px;
-	line-height: 50px;
 	display: inline-block;
 	background: #2da8e1;
 	text-align: center;
