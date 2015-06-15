@@ -190,8 +190,8 @@ body{
 .page-content__actions {
 	height: 84px;
 	text-align: center;
-	font-size: 12;
-  color: #fff;
+	font-size: 12px;
+  	color: #fff;
 	border-bottom: 1px solid #384757;
 	background: #25313E;
 	position: fixed;
