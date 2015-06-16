@@ -819,7 +819,12 @@ input.room-password__btn {
   font-family: 'Gotham B';
   font-size: 14px;
   outline: none;
-  margin-top: 25px;
+  margin-top: -32px;
+}
+.input.room-password__btn::-webkit-input-placeholder {
+	font-family: 'Gotham B';
+	font-style: italic;
+	color: #a9abac;
 }
  /*
  sign in
