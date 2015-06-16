@@ -821,7 +821,7 @@ input.room-password__btn {
   outline: none;
   margin-top: -32px;
 }
-.input.room-password__btn::-webkit-input-placeholder {
+input.room-password__btn::-webkit-input-placeholder {
 	font-family: 'Gotham B';
 	font-style: italic;
 	color: #a9abac;
