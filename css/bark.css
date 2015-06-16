@@ -201,6 +201,10 @@ body{
 .page-content__actions a {
 	width: 44px;
 	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
 	background: #009DC7;
 	display: inline-block;
 	border-radius: 50px;
