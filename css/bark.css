@@ -806,17 +806,19 @@ background-repeat: no-repeat;
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-a.room-password__btn {
+input.room-password__btn {
 	background: #364452;
 	display: block;
 	height: 50px;
 	line-height: 50px;
 	width: 210px;
 	margin: 0 auto;
+  margin-top: 20px;
 	text-align: center;
 	color: #677786;
 	font-family: 'Gotham M';
 	font-size: 14px;
+  border: 0;
 }
  /*
  sign in
