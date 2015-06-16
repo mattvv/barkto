@@ -187,10 +187,30 @@ body{
 	background: url('/img/close.png') center no-repeat;
 	display: block;
 }
+.page-content__actions-blue {
+	height: 84px;
+  	text-align: center;
+    font-size: 0;
+    border-bottom: 1px solid #384757;
+    background: #009DC7;
+    position: fixed;
+    top: 84px;
+}
+.page-content__action-call{
+  font-family: 'Gotham M';
+  color: #FFFFFF;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 84px;
+}
+
 .page-content__actions {
 	height: 84px;
 	text-align: center;
-	font-size: 0;
+	font-size: 15px;
+	font-family: 'Gotham B';
+  	color: #fff;
 	border-bottom: 1px solid #384757;
 	background: #25313E;
 	position: fixed;
@@ -199,23 +219,28 @@ body{
 .page-content__actions a {
 	width: 44px;
 	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
 	background: #009DC7;
 	display: inline-block;
 	border-radius: 50px;
 	margin: 0 8px;
-	margin-top: 20px;	
+	margin-top: 20px;
+	cursor: pointer;
 }
 .page-content__actions .action-mute {
-	background: #009DC7 url('img/action-mute.png') center no-repeat; 
+	background: #009DC7 url('/img/action-mute.png') center no-repeat;
 }
 .page-content__actions .action-equaliseur {
-	background: #009DC7 url('img/action-equaliseur.png') center no-repeat; 
+	background: #009DC7 url('/img/action-equaliseur.png') center no-repeat;
 }
 .page-content__actions .action-friends {
-	background: #009DC7 url('img/action-friends.png') center no-repeat; 
+	background: #009DC7 url('/img/action-friends.png') center no-repeat;
 }
 .page-content__actions .action-vocale {
-	background: #009DC7 url('img/action-vocale.png') center no-repeat; 
+	background: #009DC7 url('/img/action-vocale.png') center no-repeat;
 }
 .page-content__actions .in-action {
 	background-color :#ED4D4D;
@@ -820,9 +845,9 @@ input.room-password__btn {
   margin-top: -32px;
 }
 
-input.room-password__btn::-webkit-input-placeholder, 
-input.room-password__btn:-moz-placeholder, 
-input.room-password__btn::-moz-placeholder, 
+input.room-password__btn::-webkit-input-placeholder,
+input.room-password__btn:-moz-placeholder,
+input.room-password__btn::-moz-placeholder,
 input.room-password__btn:-ms-input-placeholder {
 	font-family: 'Gotham B';
 	font-style: italic;
