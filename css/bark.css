@@ -189,21 +189,38 @@ body{
 }
 .page-content__actions {
 	height: 84px;
-  	text-align: center;
-    font-size: 0;
-    border-bottom: 1px solid #384757;
-    background: #009DC7;
-    position: fixed;
-    top: 84px;
-}		
-.page-content__action-call{
-  font-family: 'Gotham M';
-  color: #FFFFFF;
-  font-size: 17px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 84px;
+	text-align: center;
+	font-size: 0;
+	border-bottom: 1px solid #384757;
+	background: #25313E;
+	position: fixed;
+	top: 84px;
 }
+.page-content__actions a {
+	width: 44px;
+	height: 44px;
+	background: #009DC7;
+	display: inline-block;
+	border-radius: 50px;
+	margin: 0 8px;
+	margin-top: 20px;	
+}
+.page-content__actions .action-mute {
+	background: #009DC7 url('img/action-mute.png') center no-repeat; 
+}
+.page-content__actions .action-equaliseur {
+	background: #009DC7 url('img/action-equaliseur.png') center no-repeat; 
+}
+.page-content__actions .action-friends {
+	background: #009DC7 url('img/action-friends.png') center no-repeat; 
+}
+.page-content__actions .action-vocale {
+	background: #009DC7 url('img/action-vocale.png') center no-repeat; 
+}
+.page-content__actions .in-action {
+	background-color :#ED4D4D;
+}
+
 .page-content__room {
 	padding: 168px 50px 120px;
 	margin-top: -20px;
