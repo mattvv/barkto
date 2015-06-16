@@ -190,7 +190,8 @@ body{
 .page-content__actions {
 	height: 84px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 15px;
+	font-family: 'Gotham B';
   	color: #fff;
 	border-bottom: 1px solid #384757;
 	background: #25313E;
@@ -635,6 +636,7 @@ body{
 	background: url('/img/close10x10.png');
 	width: 10px;
 	height: 10px;
+	cursor: pointer;
  }
  .rooms-list__entry.in-room:after {
  	content: '';
