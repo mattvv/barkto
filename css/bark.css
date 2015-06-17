@@ -366,6 +366,13 @@ BARK POPUP
 	display: inline-block;
 	margin-top: 30px;
 }
+.room__msg-box a,
+.room__msg-box span {
+	color: #A8B6C5;
+	font-family: 'Gotham B';
+	font-size: 13px;
+	line-height: 1.5;	
+}
 .room__msg-other .room__msg-box {
 	max-width: 90%;
 }
@@ -927,10 +934,10 @@ input.room-password__btn:-ms-input-placeholder {
  	background-position: -125px -80px;
  }
  .sign-in {
- 	width: 360px;
- 	margin: 100px auto 0;
- 	padding-top: 10px;
- 	opacity: 0;
+	width: 360px;
+	margin: auto 0;
+	padding-top: 100px;
+	opacity: 0;
  }
  .sign-in__form-wrp {
  	border: 2px solid #3c4957;
@@ -1024,7 +1031,7 @@ a.sign-in__options-left {
  	background-position: -125px -80px;
  }
  .sign-up-wrp {
-	margin-top: 80px;
+	padding-top: 80px;
  }
  .sign-up-wrp__intro {
  	text-align: center;
