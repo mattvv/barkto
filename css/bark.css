@@ -1536,6 +1536,17 @@ advbark
   color: rgb(78, 91, 105);
 }
 
+.loginPrompt {
+  line-height: 40px;
+  font-family: 'Gotham B';
+  color: white;
+  text-align: center;
+}
+
+.loginPrompt a {
+  color: #05a7f0;
+}
+
 .bottomError {
   line-height: 40px;
   font-family: 'Gotham B';
