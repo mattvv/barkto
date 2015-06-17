@@ -371,7 +371,7 @@ BARK POPUP
 	color: #A8B6C5;
 	font-family: 'Gotham B';
 	font-size: 13px;
-	line-height: 1.5;	
+	line-height: 1.5;
 }
 .room__msg-other .room__msg-box {
 	max-width: 90%;
@@ -935,7 +935,7 @@ input.room-password__btn:-ms-input-placeholder {
  }
  .sign-in {
 	width: 360px;
-	margin: auto 0;
+	margin: 0 auto;
 	padding-top: 100px;
 	opacity: 0;
  }
