@@ -277,6 +277,7 @@ BARK POPUP
 	background: #25313E;
 	position: fixed;
 	top: 84px;
+	z-index: 9999999999;
 }
 .page-content__actions a {
 	width: 44px;
