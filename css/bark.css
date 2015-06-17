@@ -1555,6 +1555,9 @@ advbark
   text-align: center;
 }
 
-#roomaduio {
+#roomaudio {
+  display: none;
+}
+#mixedaudio {
   display: none;
 }
