@@ -122,6 +122,68 @@ body{
 	color: #485665;
 }
 
+/***
+BARK POPUP
+**/
+.jquery-modal,
+.jquery-modal.blocker{
+	background: #2a3642 !important;
+	background: rgba(42,54,66,.94) !important;
+	z-index: 9999999 !important;
+}
+.bark-popup {
+	position: relative;
+	z-index: 999999999 !important;
+}
+.bark-popup .close-modal {
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	margin-left: -10px;
+	width: 29px;
+	height: 29px;
+	background: url('/img/close20x20.png') center no-repeat;
+	font-size: 0;
+	display: block;
+}
+.bark-popup ul {
+	list-style: none;
+	width: 390px;
+	background: #2e3d4e;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 70px 0px rgba(0,0,0,0.3)
+}
+.bark-popup ul li {
+	position: relative;
+	font-family: 'Gotham M';
+	color: #FFF;
+	font-size: 14px;
+	text-align: center;
+	height: 75px;
+	line-height: 75px;
+	border-bottom: 2px solid #38485a;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.bark-popup ul li:after {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	margin-top: -2px;
+	content: '';
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	background: #4b5b6c;
+	display: block;
+}
+.bark-popup ul li.working:after {
+	background: #05a7f0;
+}
+.bark-popup ul li:last-child {
+	border-bottom: none;
+}
 
 .page-wrp {
 	position: relative;
