@@ -1554,3 +1554,7 @@ advbark
   margin-left: 390px;
   text-align: center;
 }
+
+#roomaduio {
+  display: none;
+}
