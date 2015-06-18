@@ -152,6 +152,16 @@ BARK POPUP
 	font-size: 0;
 	display: block;
 }
+.bark-popup h4 {
+	font-family: 'Gotham B';
+	color: #FFF;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 14px;
+	letter-spacing: 5px;
+	margin-top: 10px;
+}
 .bark-popup ul {
 	list-style: none;
 	width: 390px;
@@ -225,6 +235,83 @@ BARK POPUP
 	height: 14px;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+.room-password {
+	position: relative;
+	width: 390px;
+	background: #2e3d4e;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 70px 0px rgba(0,0,0,0.3);
+	border-top: 2px solid #38485a;
+	border-bottom: 2px solid #38485a;
+	padding: 20px 0;
+	font-size: 0;
+
+}
+
+.room-password label {
+	position: relative;
+	width: 140px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: 'Gotham M';
+	color: #FFF;
+	margin-right: 20px;
+}
+.room-password label:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -13px;
+	width: 2px;
+	height: 26px;
+	background: #3e4d5f;
+}
+.room-password__elm {
+	height: 40px;
+	line-height: 40px;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #FFF;
+	font-size: 13px;
+	font-family: 'Gotham M';
+	width: 230px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 49px;
+}
+
+.room-password__button {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -6px;
+  width: 14px;
+  height: 12px;
+  background: url('/img/arrow-right-white.png') center no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.room-password__elm::-webkit-input-placeholder {
+	color: #4A5B6F;
+}
+.room-password__elm:-moz-placeholder {
+	color: #4A5B6F;
+}
+.room-password__elm::-moz-placeholder {
+	color: #4A5B6F;
+}
+.room-password__elm:-ms-input-placeholder {
+	color: #4A5B6F;
 }
 
 .page-wrp {
@@ -1677,7 +1764,7 @@ advbark
 
 }
 
-#micSettings, #volumeSetting {
+#micSettings, #volumeSetting, #roomPassword {
   display: none;
 }
 
