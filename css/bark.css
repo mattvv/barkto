@@ -191,6 +191,42 @@ BARK POPUP
 	border-bottom: none;
 }
 
+.volume-setting{
+	width: 390px;
+	background: #2e3d4e url('/img/volume.png') center left 55px no-repeat;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 70px 0px rgba(0,0,0,0.3);
+	border-top: 2px solid #38485a;
+	border-bottom: 2px solid #38485a;
+	padding: 35px 65px 35px 130px;
+}
+.volumeslider {
+	position: relative;
+	width: 100%;
+	background: #435466;
+	height: 6px;
+	border-radius: 6px;
+}
+
+.volumeslider__fill {
+	position: absolute;
+	top: 0;
+	height: 6px;
+	background: #009dc7;
+	display: block;
+	border-radius: 6px;
+}
+.volumeslider__handle {
+	position: absolute;
+	top: -4px;
+	background: #FFF;
+	width: 14px;
+	height: 14px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
 .page-wrp {
 	position: relative;
 	top: 0;
@@ -1641,7 +1677,7 @@ advbark
 
 }
 
-#micSettings {
+#micSettings, #volumeSetting {
   display: none;
 }
 
