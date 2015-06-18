@@ -134,6 +134,12 @@ BARK POPUP
 .bark-popup {
 	position: relative;
 	z-index: 999999999 !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .bark-popup .close-modal {
 	position: absolute;
@@ -745,6 +751,28 @@ BARK POPUP
 	border-left: 8px solid #303e4c;
 	display: block;
  }
+ .rooms-list__entry:before {
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: -6px;
+ 	width: 6px;
+	height: 100%;
+	background: #2da8e1;
+	display: block;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.rooms-list__entry.new-msg:before {
+  -webkit-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  -o-transform: translateX(6px);
+  transform: translateX(6px);
+}
 
 .join-room {
 	margin-top: 60px;
@@ -822,10 +850,26 @@ BARK POPUP
 	cursor: pointer;
 	border-bottom: 1px solid #384757;
 }
+.members-statut__numbers {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  margin-top: -11px;
+  font-size: 13px;
+  font-family: 'Gotham M';
+  width: 23px;
+  height: 23px;
+  background: #CBD7E3;
+  color: #2A3642;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 26px;
+  display: block;
+}
 .members-statut__btn .fa {
 	position: absolute;
 	top: 50%;
-	right: 50px;
+	right: 30px;
 	margin-top: -8px;
 	font-size: 16px;
 	-webkit-transition: -webkit-transform ease 0.15s,  color ease 0.15s;
