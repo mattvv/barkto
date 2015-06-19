@@ -315,6 +315,40 @@ BARK POPUP
 	color: #4A5B6F;
 }
 
+/*
+Error box
+ */
+
+.error-box {
+	position: relative;
+	background: #ed4d4d;
+	width: 100%;
+	border-radius: 3px;
+	color: #FFF;
+	font-family: 'Gotham M';
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: center;
+	padding: 18px 58px;
+	margin-bottom: 12px;
+}
+.error-box__close {
+	position: absolute;
+	top :50%;
+	left: 25px;
+	margin-top: -4px;
+	width: 8px;
+	height: 8px;
+	background: url('/img/close8x8.png') center no-repeat;
+	cursor: pointer;
+}
+input.error-border {
+	border-color: #ed4d4d;
+}
+input.success-borer {
+  border-color: #90EE90;
+}
+
 .page-wrp {
 	position: relative;
 	top: 0;
@@ -688,6 +722,7 @@ BARK POPUP
 	z-index: 9999;
 	outline: none;
 	overflow: visible !important;
+	z-index: 9999999;
 }
 
 
@@ -1771,9 +1806,8 @@ advbark
 }
 
 .topError {
-  line-height: 40px;
-  font-family: 'Gotham B';
-  color: rgb(78, 91, 105);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .loginPrompt {
