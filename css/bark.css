@@ -128,8 +128,9 @@ BARK POPUP
 .jquery-modal,
 .jquery-modal.blocker{
 	background: #2a3642 !important;
-	background: rgba(42,54,66,.94) !important;
+	background: rgb(42,54,66) !important;
 	z-index: 9999999 !important;
+  opacity: 0.95 !important;
 }
 .bark-popup {
 	position: relative;
@@ -597,8 +598,8 @@ BARK POPUP
 	background-repeat:no-repeat;
 }
 .edit-profile {
-	margin-top: 105px;
-	padding-bottom: 170px;
+	margin-top: 180px;
+	padding-bottom: 10px;
 }
 .edit-profile__thumb-elm {
 	display: none;
@@ -658,18 +659,19 @@ BARK POPUP
 	font-size: 15px;
 }
 .edit-profile-form__btn {
-	position: absolute;
+	position: fixed;
 	top: 35px;
-	right: 50px;
+	right: 300px;
 	color: #485665;
 	font-family: 'Gotham M';
 	font-size: 15px;
 	padding: 0;
 	border: none;
 	line-height: 1;
-	background: transparent;
+	background: rgba(0, 0, 0, 0);
 	cursor: pointer;
 	outline: none;
+  z-index: 2;
 }
 
 
