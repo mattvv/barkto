@@ -509,6 +509,10 @@ input.success-borer {
 .profile__content .msg-date {
 	color: #546476;
 }
+.profile__content .msg-date_alert {
+	color: #546476;
+  padding: 0 15px;
+}
 .room__alert {
 	font-size: 15px;
 	padding: 0 15px;
