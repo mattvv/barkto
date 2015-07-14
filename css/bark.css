@@ -202,7 +202,7 @@ BARK POPUP
 	border-bottom: none;
 }
 
-.volume-setting{
+.volume-setting {
 	width: 390px;
 	background: #2e3d4e url('/img/volume.png?v=2') center left 55px no-repeat;
 	border-radius: 3px;
@@ -212,6 +212,18 @@ BARK POPUP
 	border-bottom: 2px solid #38485a;
 	padding: 35px 65px 35px 130px;
 }
+
+.ptt-setting{
+	width: 390px;
+	background: #2e3d4e;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 70px 0px rgba(0,0,0,0.3);
+	border-top: 2px solid #38485a;
+	border-bottom: 2px solid #38485a;
+	padding: 35px 65px 35px 65px;
+}
+
 .volumeslider {
 	position: relative;
 	width: 100%;
@@ -457,6 +469,7 @@ input.success-borer {
 	margin: 0 8px;
 	margin-top: 20px;
 	cursor: pointer;
+  vertical-align: middle;
 }
 .page-content__actions .action-mute {
 	background: #009DC7 url('/img/action-mute.png') center no-repeat;
@@ -1805,7 +1818,7 @@ advbark
 
 }
 
-#micSettings, #volumeSetting, #roomPassword {
+#micSettings, #volumeSetting, #roomPassword, #pttSetting {
   display: none;
 }
 
