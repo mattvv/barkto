@@ -224,6 +224,13 @@ BARK POPUP
 	padding: 35px 65px 35px 65px;
 }
 
+.ptt-setting div a {
+  width: auto;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .volumeslider {
 	position: relative;
 	width: 100%;
