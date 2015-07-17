@@ -1859,3 +1859,7 @@ advbark
 #mixedaudio {
   display: none;
 }
+
+.keybind {
+  font-size: 1.4em !important;
+}
