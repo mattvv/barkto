@@ -432,6 +432,7 @@ input.success-borer {
 	height: 11px;
 	background: url('/img/close.png') center no-repeat;
 	display: block;
+  cursor: pointer;
 }
 .page-content__actions-blue {
 	height: 84px;
