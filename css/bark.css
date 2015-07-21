@@ -222,6 +222,7 @@ BARK POPUP
 	border-top: 2px solid #38485a;
 	border-bottom: 2px solid #38485a;
 	padding: 35px 65px 35px 65px;
+  color: white;
 }
 
 .ptt-setting div a {
@@ -1826,7 +1827,7 @@ advbark
 
 }
 
-#micSettings, #volumeSetting, #roomPassword, #pttSetting {
+#micSettings, #volumeSetting, #roomPassword, #pttSetting, #invalidRoomName {
   display: none;
 }
 
