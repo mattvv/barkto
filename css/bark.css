@@ -1868,3 +1868,7 @@ advbark
 .keybind {
   font-size: 1.4em !important;
 }
+
+.btn {
+  color: black;
+}
