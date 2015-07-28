@@ -213,7 +213,7 @@ BARK POPUP
 	padding: 35px 65px 35px 130px;
 }
 
-.ptt-setting{
+.ptt-setting, .mic-setting{
 	width: 390px;
 	background: #2e3d4e;
 	border-radius: 3px;
@@ -225,11 +225,26 @@ BARK POPUP
   color: white;
 }
 
-.ptt-setting div a {
+.ptt-setting div a, .mic-setting div a {
   width: auto;
   height: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.mic-setting {
+  padding: 0px 0px 0px 0px;
+}
+
+.mic-setting h1 {
+  font-family: 'Gotham B';
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 14px;
+  letter-spacing: 5px;
+  margin-top: 14px;
 }
 
 .volumeslider {
