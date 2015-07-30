@@ -213,7 +213,7 @@ BARK POPUP
 	padding: 35px 65px 35px 130px;
 }
 
-.ptt-setting, .mic-setting{
+.ptt-setting, .mic-setting, .whiteboard-holder {
 	width: 390px;
 	background: #2e3d4e;
 	border-radius: 3px;
@@ -225,14 +225,14 @@ BARK POPUP
   color: white;
 }
 
-.ptt-setting div a, .mic-setting div a {
+.ptt-setting div a, .mic-setting div a, .whiteboard-holder div a {
   width: auto;
   height: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.mic-setting {
+.mic-setting, .whiteboard-holder {
   padding: 0px 0px 0px 0px;
 }
 
@@ -245,6 +245,11 @@ BARK POPUP
   margin-bottom: 14px;
   letter-spacing: 5px;
   margin-top: 14px;
+}
+
+.whiteboard-holder {
+  width: 1024px;
+  height: 1024px;
 }
 
 .volumeslider {
@@ -1845,8 +1850,12 @@ advbark
 
 }
 
-#micSettings, #volumeSetting, #roomPassword, #pttSetting, #invalidRoomName {
+#micSettings, #volumeSetting, #roomPassword, #pttSetting, #invalidRoomName, #whiteboard {
   display: none;
+}
+
+#whiteboardContainer {
+  z-index: 999999;
 }
 
 .topError {
@@ -1886,4 +1895,23 @@ advbark
 
 .btn {
   color: black;
+}
+
+.whiteboard {
+  position: absolute;
+  right: 60px;
+  top: 10px;
+  width: 11px;
+  height: 11px;
+  margin-top: -5px;
+  display: block;
+  cursor: pointer;
+}
+
+.whiteboard-lnk {
+  color: white;
+}
+
+.whiteboard-lnk:hover {
+  color: #009DC7;
 }
