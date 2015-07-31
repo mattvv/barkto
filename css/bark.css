@@ -1924,10 +1924,33 @@ advbark
   margin: 1px;
   display: inline-block;
   border: 3px solid black;
+  vertical-align: middle;
 }
 
 #colorholder {
   width: 480px;
   height: 30px;
   margin: 5px auto 25px auto;
+}
+
+.whiteboard-image {
+  position: absolute;
+  z-index: 1;
+}
+
+#whiteboard-canvas {
+  position: relative;
+  z-index: 20;
+}
+
+#whiteboard-container {
+  display:inline-block;
+  width:800px;
+  height:800px;
+  margin: 0 auto;
+  background: black;
+  position:relative;
+  border:5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 50px #333
 }
