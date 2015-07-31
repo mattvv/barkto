@@ -1897,6 +1897,8 @@ advbark
   color: black;
 }
 
+/* whiteboard */
+
 .whiteboard {
   position: absolute;
   right: 60px;
@@ -1914,4 +1916,18 @@ advbark
 
 .whiteboard-lnk:hover {
   color: #009DC7;
+}
+
+.colorbox {
+  width: 22px;
+  height: 22px;
+  margin: 1px;
+  display: inline-block;
+  border: 3px solid black;
+}
+
+#colorholder {
+  width: 480px;
+  height: 30px;
+  margin: 5px auto 25px auto;
 }
