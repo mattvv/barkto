@@ -1937,7 +1937,7 @@ advbark
   position: absolute;
 }
 
-#whiteboard-canvas {
+.whiteboard-canvas {
   position: relative;
 }
 
