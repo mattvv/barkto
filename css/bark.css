@@ -107,7 +107,7 @@ body{
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 99999999999999999999999;
+	z-index: 100;
 	background: #FFF;
 	display: block;
 	text-align: center;
@@ -129,12 +129,12 @@ BARK POPUP
 .jquery-modal.blocker{
 	background: #2a3642 !important;
 	background: rgb(42,54,66) !important;
-	z-index: 9999999 !important;
+	z-index: 95 !important;
   opacity: 0.95 !important;
 }
 .bark-popup {
 	position: relative;
-	z-index: 999999999 !important;
+	z-index: 110 !important;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -406,7 +406,7 @@ input.success-borer {
 	font-size: 13px;
 	padding: 23px 20px 23px 46px;
 	width: 100%;
-	z-index: 9999999999;
+	z-index: 90;
 	line-height: 1.4;
 }
 .notification__close {
@@ -442,7 +442,7 @@ input.success-borer {
 	background: #25313E;
 	position: fixed;
 	top: 0;
-
+  z-index: 90;
 }
 .page-content__title .icon-close{
 	position: absolute;
@@ -463,6 +463,7 @@ input.success-borer {
     background: #009DC7;
     position: fixed;
     top: 84px;
+    z-index: 85;
 }
 .page-content__action-call{
   font-family: 'Gotham M';
@@ -483,7 +484,7 @@ input.success-borer {
 	background: #25313E;
 	position: fixed;
 	top: 84px;
-	z-index: 9999999999;
+	z-index: 85;
 }
 .page-content__actions a {
 	width: 44px;
@@ -765,10 +766,9 @@ input.success-borer {
 	top: 0;
 	background: #2a3642;
 	display: block;
-	z-index: 9999;
+	z-index: 80;
 	outline: none;
 	overflow: visible !important;
-	z-index: 9999999;
 }
 
 
@@ -1036,7 +1036,7 @@ input.success-borer {
 	top: 0;
 	background: #2a3642;
 	display: block;
-	z-index: 999999;
+	z-index: 80;
 	outline: none;
 }
 
@@ -1855,7 +1855,7 @@ advbark
 }
 
 #whiteboardContainer {
-  z-index: 999999;
+  z-index: 100;
 }
 
 .topError {
@@ -1935,12 +1935,10 @@ advbark
 
 .whiteboard-image {
   position: absolute;
-  z-index: 1;
 }
 
 #whiteboard-canvas {
   position: relative;
-  z-index: 20;
 }
 
 #whiteboard-container {
