@@ -1949,3 +1949,18 @@ advbark
   height:800px;
   margin: 0 auto;
 }
+
+.btn-group {
+  height: auto;
+}
+
+.navbar ul {
+  width: auto;
+}
+
+.navbar ul li {
+  display: inline;
+  position: inherit;
+  border: 2px solid #38485a;
+  padding: 10px;
+}
