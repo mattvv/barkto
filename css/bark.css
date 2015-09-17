@@ -485,7 +485,18 @@ input.success-borer {
 	position: fixed;
 	top: 84px;
 	z-index: 85;
+  margin: auto;
 }
+
+.page-content__actions .col-md-1 {
+  text-align: center;
+  font-size: 11px;
+}
+
+.actionText {
+  margin-top: 5px;
+}
+
 .page-content__actions a {
 	width: 44px;
 	height: 44px;
@@ -496,7 +507,7 @@ input.success-borer {
 	background: #009DC7;
 	display: inline-block;
 	border-radius: 50px;
-	margin: 0 8px;
+	margin: 0;
 	margin-top: 20px;
 	cursor: pointer;
   vertical-align: middle;
