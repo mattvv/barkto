@@ -601,6 +601,11 @@ input.success-borer {
 	max-width: 90%;
 }
 
+.room__msg-highlighted .room__msg-box span {
+  color: #009dc7;
+  font-weight: bold;
+}
+
 .page-content__sendbox {
 	position: fixed;
 	height: 90px;
