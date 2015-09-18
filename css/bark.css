@@ -464,6 +464,7 @@ input.success-borer {
     position: fixed;
     top: 84px;
     z-index: 85;
+    cursor: pointer;
 }
 .page-content__action-call{
   font-family: 'Gotham M';
