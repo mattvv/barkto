@@ -1672,6 +1672,60 @@ a.sign-in__options-left {
 	line-height: 1.5;
 }
 
+
+/*
+ tactics
+ */
+
+ .section-tactics {
+ 	position: relative;
+  padding-top:50px;
+ }
+ .section-tactics__maskwrp {
+ 	position: absolute;
+ 	padding-left: 0px;
+ 	width: 50%;
+ 	height: 100%;
+  left: -30px;
+ 	display: block;
+ }
+ .section-tactics__mask {
+ 	height: 100%;
+ 	width: 100%;
+ 	background: url('/img/tactics.png') center right no-repeat;
+ 	background-size: auto 100%;
+ 	box-shadow: 0 0 68px 5px rgba(0,0,0,.3);
+ }
+
+
+ .section-tactics__inner {
+ 	padding-right: 30px;
+ 	padding-top: 80px;
+ 	padding-bottom: 80px;
+ 	border-left: 1px dashed #009dc7;
+ }
+
+ .section-tactics__title {
+ 	color: #FFF;
+ 	text-transform: uppercase;
+ 	font-family: 'Gotham M';
+ 	font-size: 15px;
+ 	margin-bottom: 10px;
+ }
+ .section-tactics__content {
+ 	color: #566677;
+ 	font-family: 'Gotham M';
+ 	font-size: 13px;
+ 	line-height: 1.5;
+ 	margin-bottom: 30px;
+ }
+
+
+ .section-tactics__content a {
+ 	color: #05a7f0;
+ }
+
+
 /*
 advbark
  */
