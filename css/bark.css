@@ -248,8 +248,8 @@ BARK POPUP
 }
 
 .whiteboard-holder {
-  width: 800px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
 }
 
 .volumeslider {
@@ -2024,8 +2024,8 @@ advbark
 
 #whiteboard-container {
   display:inline-block;
-  width:600px;
-  height:600px;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
 }
 
