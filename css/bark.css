@@ -2069,3 +2069,13 @@ li.current {
 .typeahead-selector li a {
   color: #586879;
 }
+
+.promotional {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+}
+
+.promotional a {
+  color: #FFD1DC;
+}
