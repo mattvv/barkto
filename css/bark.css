@@ -2088,3 +2088,27 @@ li.current {
 .promotional a {
   color: #FFD1DC;
 }
+
+.issues {
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  text-transform: uppercase;
+  font-family: 'Gotham M';
+  line-height: 53px;
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
+
+.issues a {
+  color: #ccc;
+}
+
+.issues a:hover {
+  color: #009DC7;
+}
+
+.issuesDownload {
+  padding-bottom: 20px;
+}
