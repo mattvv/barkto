@@ -542,8 +542,8 @@ input.success-borer {
 }
 .room__profile {
 	font-size: 0;
-	padding-top: 60px;
-
+	padding-top: 30px;
+  margin-bottom: 18px;
 }
 .profile__thumb {
 	width: 50px;
@@ -592,7 +592,7 @@ input.success-borer {
 	padding: 20px;
 	max-width: 85%;
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 2px;
 }
 .room__msg-box a,
 .room__msg-box span {
@@ -605,9 +605,13 @@ input.success-borer {
 	max-width: 90%;
 }
 
+.room__msg-highlighted .room__msg-box {
+  background: #A8B6C5;
+}
+
 .room__msg-highlighted .room__msg-box span {
-  color: #009dc7;
   font-weight: bold;
+  color: #111;
 }
 
 .page-content__sendbox {
