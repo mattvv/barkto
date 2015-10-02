@@ -1174,6 +1174,11 @@ background-repeat: no-repeat;
 	color: #009DC7;
 	font-size: 13px;
 }
+
+.members-statut__support {
+	color: #FF7878;
+	font-size: 13px;
+}
 .menu-right__room-password {
 	margin-top: 50px;
 	margin-bottom: 50px;
