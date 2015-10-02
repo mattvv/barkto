@@ -593,13 +593,18 @@ input.success-borer {
 	max-width: 85%;
 	display: inline-block;
 	margin-top: 2px;
+  overflow: hidden;
 }
-.room__msg-box a,
+.room__msg-box a
 .room__msg-box span {
 	color: #A8B6C5;
 	font-family: 'Gotham B';
 	font-size: 13px;
 	line-height: 1.5;
+}
+
+.room__msg-box a {
+  color: #009DC7;
 }
 .room__msg-other .room__msg-box {
 	max-width: 90%;
