@@ -517,6 +517,10 @@ input.success-borer {
 	cursor: pointer;
   vertical-align: middle;
 }
+
+.page-content__actions a:hover {
+  background-color: #586879;
+}
 .page-content__actions .action-mute {
 	background: #009DC7 url('/img/action-mute.png') center no-repeat;
 }
