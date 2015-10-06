@@ -626,7 +626,7 @@ input.success-borer {
 .page-content__sendbox {
 	position: fixed;
 	height: 90px;
-	width: 100%;
+  width: 1030px;
 	background: #273340;
 	bottom: 0;
 	border-top: 2px solid #303E4C;
@@ -866,7 +866,7 @@ input.success-borer {
 }
 .account-options__logout{
 	position: absolute;
-	right: 25px;
+	right: 15px;
 	top: 50%;
 	margin-top: -8px;
 	font-size: 16px;
@@ -2114,4 +2114,40 @@ li.current {
 
 .issuesDownload {
   padding-bottom: 20px;
+}
+
+.hideRooms {
+  position: absolute;
+  top: 26px;
+  left: 310px;
+  z-index: 110;
+  color: #fff;
+}
+
+.hideRooms a {
+  color: #515a62;
+}
+
+.hideRooms a:hover {
+  color: #adb1b6;
+}
+
+.showRooms {
+  position: absolute;
+  top: 26px;
+  left: 10px;
+  z-index: 110;
+  color: #fff;
+}
+
+.showRooms a {
+  color: #515a62;
+}
+
+.showRooms a:hover {
+  color: #adb1b6;
+}
+
+.room-list {
+  width: 300px;
 }
