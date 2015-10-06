@@ -2117,7 +2117,7 @@ li.current {
 }
 
 .hideRooms {
-  position: absolute;
+  position: fixed;
   top: 26px;
   left: 310px;
   z-index: 110;
@@ -2133,7 +2133,7 @@ li.current {
 }
 
 .showRooms {
-  position: absolute;
+  position: fixed;
   top: 26px;
   left: 10px;
   z-index: 110;
