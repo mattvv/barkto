@@ -2148,6 +2148,38 @@ li.current {
   color: #adb1b6;
 }
 
+.hideUsers {
+  position: fixed;
+  top: 26px;
+  right: 260px;
+  z-index: 110;
+  color: #fff;
+}
+
+.hideUsers a {
+  color: #515a62;
+}
+
+.hideUsers a:hover {
+  color: #adb1b6;
+}
+
+.showUsers {
+  position: fixed;
+  top: 26px;
+  right: 10px;
+  z-index: 110;
+  color: #fff;
+}
+
+.showUsers a {
+  color: #515a62;
+}
+
+.showUsers a:hover {
+  color: #adb1b6;
+}
+
 .room-list {
   width: 300px;
 }
