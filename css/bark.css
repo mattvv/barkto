@@ -1999,7 +1999,7 @@ advbark
 .whiteboard {
   position: absolute;
   right: 60px;
-  top: 10px;
+  top: 6px;
   width: 11px;
   height: 11px;
   margin-top: -5px;
@@ -2008,7 +2008,7 @@ advbark
 }
 
 .whiteboard-lnk {
-  margin-left: -20px;
+  margin-left: -30px;
   color: white;
   font-size: 12px;
 }
@@ -2116,70 +2116,41 @@ li.current {
   padding-bottom: 20px;
 }
 
-.hideRooms {
-  position: fixed;
-  top: 26px;
-  left: 310px;
+.arrowButton {
   z-index: 110;
   color: #fff;
 }
 
-.hideRooms a {
+.arrowButton button {
   color: #515a62;
+  border: none;
+  background: none;
 }
 
-.hideRooms a:hover {
+.arrowButton button:hover {
   color: #adb1b6;
+}
+
+.hideRooms {
+  position: fixed;
+  top: 26px;
+  left: 310px;
 }
 
 .showRooms {
   position: fixed;
   top: 26px;
   left: 10px;
-  z-index: 110;
-  color: #fff;
-}
-
-.showRooms a {
-  color: #515a62;
-}
-
-.showRooms a:hover {
-  color: #adb1b6;
 }
 
 .hideUsers {
   position: fixed;
   top: 26px;
   right: 260px;
-  z-index: 110;
-  color: #fff;
-}
-
-.hideUsers a {
-  color: #515a62;
-}
-
-.hideUsers a:hover {
-  color: #adb1b6;
 }
 
 .showUsers {
   position: fixed;
   top: 26px;
   right: 10px;
-  z-index: 110;
-  color: #fff;
-}
-
-.showUsers a {
-  color: #515a62;
-}
-
-.showUsers a:hover {
-  color: #adb1b6;
-}
-
-.room-list {
-  width: 300px;
 }
