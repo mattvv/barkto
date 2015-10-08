@@ -2154,3 +2154,22 @@ li.current {
   top: 26px;
   right: 10px;
 }
+
+.loaderCell {
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+#loader {
+  display: none; /* table */
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  color: white;
+  background: #25313E;
+}
