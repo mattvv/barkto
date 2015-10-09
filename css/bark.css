@@ -1603,7 +1603,9 @@ a.sign-in__options-left {
 .gstart__form {
 	position: relative;
 	float: none;
-	height: 60px;
+	/*height: 60px;*/
+  color: #fff;
+  text-align: center;
 }
 
 .gstart__form-elm {
@@ -2172,4 +2174,9 @@ li.current {
   z-index: 1000;
   color: white;
   background: #25313E;
+}
+.waitingRoom {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
 }
