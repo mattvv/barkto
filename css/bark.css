@@ -433,6 +433,7 @@ input.success-borer {
 	margin-left: 300px;
 	margin-right: 250px;
 }
+
 .page-content__title {
 	position: relative;
 	font-family: 'Gotham M';
@@ -461,14 +462,14 @@ input.success-borer {
 }
 .page-content__actions-blue {
 	height: 84px;
-  	text-align: center;
-    font-size: 0;
-    border-bottom: 1px solid #384757;
-    background: #009DC7;
-    position: fixed;
-    top: 84px;
-    z-index: 85;
-    cursor: pointer;
+	text-align: center;
+  font-size: 0;
+  border-bottom: 1px solid #384757;
+  background: #009DC7;
+  position: fixed;
+  top: 84px;
+  z-index: 85;
+  cursor: pointer;
 }
 .page-content__action-call{
   font-family: 'Gotham M';
@@ -626,7 +627,6 @@ input.success-borer {
 .page-content__sendbox {
 	position: fixed;
 	height: 90px;
-  width: 1030px;
 	background: #273340;
 	bottom: 0;
 	border-top: 2px solid #303E4C;
