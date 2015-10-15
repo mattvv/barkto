@@ -2197,3 +2197,12 @@ li.current {
 .settings a {
   color: #009dc7;
 }
+
+.version {
+  position: absolute;
+  bottom: 5px;
+  font-family: 'Gotham M';
+  color: #ccc;
+  right: 25px;
+  font-size: small;
+}
