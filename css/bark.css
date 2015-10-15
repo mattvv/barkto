@@ -252,23 +252,25 @@ BARK POPUP
   height: 780px
 }
 
-.volumeslider {
+.volumeslider, .rangeslider {
 	position: relative;
 	width: 100%;
 	background: #435466;
 	height: 6px;
 	border-radius: 6px;
+  margin-top: 10px;
 }
 
-.volumeslider__fill {
+.volumeslider__fill, .rangeslider__fill {
 	position: absolute;
 	top: 0;
 	height: 6px;
 	background: #009dc7;
 	display: block;
 	border-radius: 6px;
+  max-width: 100%;
 }
-.volumeslider__handle {
+.volumeslider__handle, .rangeslider__handle {
 	position: absolute;
 	top: -4px;
 	background: #FFF;
@@ -2179,4 +2181,14 @@ li.current {
   color: #fff;
   text-align: center;
   padding-top: 20px;
+}
+
+.settings {
+  border-bottom: 1px solid #51606f;
+  padding:20px;
+  color: #fff;
+}
+
+.settings label {
+  padding-bottom: 5px;
 }
