@@ -2184,6 +2184,7 @@ li.current {
 }
 
 .settings {
+  text-align: center;
   border-bottom: 1px solid #51606f;
   padding:20px;
   color: #fff;
@@ -2191,4 +2192,8 @@ li.current {
 
 .settings label {
   padding-bottom: 5px;
+}
+
+.settings a {
+  color: #009dc7;
 }
