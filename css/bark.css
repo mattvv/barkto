@@ -922,7 +922,7 @@ input.success-borer {
 	border-bottom: 2px solid #3c4b59;
 	font-family: 'Gotham M';
 	padding: 0 20px;
-
+	cursor: pointer;
  }
 
  .room_statut {
