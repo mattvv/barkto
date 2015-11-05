@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>Callouts Demo - Mirage</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script>
+    function callout(text) {
+      text = text.replace(/undefined /i, '');
+      $('ul').append("<li>"+text+"</li>")
+    }
+
+    function ct(term) {
+      if (typeof(term) === undefined) {
+        console.log('returning blank')
+        return "";
+      }
+      //todo: term includes intead of term ===
+      if (term === "o" || term === "old" || term === "when") {
+        return "all";
+      }
+
+      //one
+      if (term === "what") {
+        return "one";
+      }
+
+      //two
+      if (term === "to" || term === "too") {
+        return "two";
+      }
+
+      //fire box
+      if (term === "bucks" || term == "Oakes" || term =="hours") {
+        return "fire box";
+      }
+
+      //van
+      if (term === "man") {
+        return "van";
+      }
+
+      //apts
+      if (term === "apps") {
+        return "apts";
+      }
+
+      //bench and...
+      if (term === "tension") {
+        return "bench and"
+      }
+
+      //ebox
+      if (term === "")
+
+      //site
+      if (term === "side" || term === "sight") {
+        return "site";
+      }
+
+      return term
+    }
+    if (annyang) {
+      // Let's define a command.
+      console.log('annyang loaded');
+      var commands = {
+        //fire box
+        '(*term) fire box': function(t) { callout(ct(t) + ' fire box') },
+        '(*term) firebox': function(t) { callout(ct(t) + ' fire box') },
+        '(*term) firefox': function(t) { callout(ct(t) + ' fire box') },
+        '(*term) bucks': function(t) { callout('fire box') },
+        '(*term) Oakes': function(t) { callout('fire box') },
+        '(*term) PO Box': function(t) { callout(ct(t) + ' fire box') },
+        '(*term) hours': function(t) { callout(ct(t) + ' fire box') },
+
+        //van
+        '(*term) van': function(t) { callout(ct(t) + ' van') },
+        '(*term) man': function(t) { callout(ct(t) + ' van') },
+
+        '(*term) kitchen': function(t) { callout(ct(t) + ' kitchen') },
+        '(*term) cat': function(t) { callout(ct(t) + ' cat') },
+        '(*term) catwalk': function(t) { callout(ct(t) + ' catwalk') },
+        '(*term) window': function(t) { callout(ct(t) + ' window') },
+
+        //apts
+        '(*term) apts': function(t) { callout(ct(t) + ' apts') },
+        '(*term) apps': function(t) { callout(ct(t) + ' apts') },
+        '(*term) apartments': function(t) { callout(ct(t) + ' apartments') },
+
+        //ebox
+        '(*term) e box': function(t) { callout(ct(t) + ' e box') },
+        '(*term) ebooks': function(t) { callout(ct(t) + ' e box') },
+        '(*term) inbox': function(t) { callout(ct(t) + ' e box') },
+        '(*term) moneybox': function(t) { callout(ct(t) + ' e box') },
+
+        '(*term) bench': function(t) { callout(ct(t) + ' bench') },
+
+        //site
+        '(*term) site': function(t) { callout(ct(t) + ' site') },
+        '(*term) sight': function(t) { callout(ct(t) + ' site') },
+        '(*term) side': function(t) { callout(ct(t) + ' site') },
+        '(*term) jungle': function(t) { callout(ct(t) + ' jungle') },
+        '(*term) connector': function(t) { callout(ct(t) + ' connector') },
+
+        //ct
+        '(*term) CT': function(t) { callout(ct(t) + ' CT') },
+        '(*term) c t': function(t) { callout(ct(t) + ' CT') },
+        '(*term) CeCe': function(t) { callout(ct(t) + ' CT') },
+        '(*term) pt': function(t) { callout(ct(t) + ' CT') },
+        '(*term) pity': function(t) { callout(ct(t) + ' CT') },
+
+        //stairs
+        '(*term) stairs': function(t) { callout(ct(t) + ' stairs') },
+        '(*term) stair': function(t) { callout(ct(t) + ' stairs') },
+        '(*term) stay': function(t) { callout(ct(t) + ' stairs') },
+
+        //ticket booth
+        '(*term) ticket': function(t) { callout(ct(t) + ' ticket booth') },
+        '(*term) booth': function(t) { callout(ct(t) + ' ticket booth') },
+        '(*term) birds': function(t) { callout(ct(t) + ' ticket booth') },
+        '(*term) ticket booth': function(t) { callout(ct(t) + ' ticket booth') },
+
+        //palace
+        '(*term) alice': function(t) { callout(ct(t) + ' palace') },
+        '(*term) pallets': function(t) { callout(ct(t) + ' palace') },
+        '(*term) palace': function(t) { callout(ct(t) + ' palace') },
+
+        //tetris
+        //sandwich
+        //t ramp
+        //ramp
+        //t spawn
+        //mid
+        //cart
+        //top mid
+        //underpass
+        //underpass
+        //ladder room
+        //ladder
+        //vent
+        //stove
+        //pillars
+        //under palace
+        //tri box
+        //default
+        //site
+        //palm
+      };
+
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+      annyang.debug(true);
+      // Start listening.
+      annyang.start();
+      console.log('annyang started');
+    }
+    </script>
+    <body>
+      <h1>Bark Callouts Demo</h1>
+      <p>
+        This is a demo of Bark Callouts (Alpha) on Mirage. Use the map below as a guide for your callouts and try calling out.
+      </p>
+      <p>
+        Bark callouts is an Idea for CS GO that callouts can be yelled on the mic and displayed in any language.
+      </p>
+      <ul id="callouts">
+      </ul>
+      <img src="/img/csgo/de_mirage.jpg"/>
+    </body>
+  </head>
