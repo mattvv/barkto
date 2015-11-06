@@ -10,12 +10,12 @@
     }
 
     function ct(term) {
-      if (typeof(term) === undefined) {
-        console.log('returning blank')
+      if (typeof(term) === 'undefined') {
         return "";
       }
+      term = term.trim();
       //todo: term includes intead of term ===
-      if (term === "o" || term === "old" || term === "when") {
+      if (term === "o" || term === "old" || term === "when" || term === "fun") {
         return "all";
       }
 
@@ -124,26 +124,89 @@
         '(*term) pallets': function(t) { callout(ct(t) + ' palace') },
         '(*term) palace': function(t) { callout(ct(t) + ' palace') },
 
+        '(*term) under alice': function(t) { callout(ct(t) + ' under palace') },
+        '(*term) under pallets': function(t) { callout(ct(t) + ' under palace') },
+        '(*term) under palace': function(t) { callout(ct(t) + ' under palace') },
+
         //tetris
+        '(*term) tetris': function(t) { callout(ct(t) + ' tetris') },
+        '(*term) texas': function(t) { callout(ct(t) + ' tetris') },
+
         //sandwich
+        '(*term) sandwich': function(t) { callout(ct(t) + ' sandwich') },
+
         //t ramp
+        '(*term) t ramp': function(t) { callout(ct(t) + ' t ramp') },
+
         //ramp
+        '(*term) ramp': function(t) { callout(ct(t) + ' ramp') },
+        '(*term) ram': function(t) { callout(ct(t) + ' ramp') },
+        '(*term) rack': function(t) { callout(ct(t) + ' ramp') },
+        '(*term) rat': function(t) { callout(ct(t) + ' ramp') },
+
         //t spawn
+        '(*term) spawn': function(t) { callout(ct(t) + ' spawn') },
+        '(*term) t spawn': function(t) { callout(ct(t) + ' t spawn') },
+        '(*term) teaspoon': function(t) { callout(ct(t) + ' t spawn') },
+
         //mid
+        '(*term) mid': function(t) { callout(ct(t) + ' mid') },
+        '(*term) min': function(t) { callout(ct(t) + ' mid') },
+        '(*term) middle': function(t) { callout(ct(t) + ' mid') },
+        '(*term) made': function(t) { callout(ct(t) + ' mid') },
+        '(*term) maid': function(t) { callout(ct(t) + ' mid') },
+        '(*term) middle': function(t) { callout(ct(t) + ' middle') },
+
         //cart
-        //top mid
+        '(*term) cart': function(t) { callout(ct(t) + ' cart') },
+        '(*term) cup': function(t) { callout(ct(t) + ' cart') },
+
         //underpass
-        //underpass
+        '(*term) underpass': function(t) { callout(ct(t) + ' underpass') },
+        '(*term) on the bus': function(t) { callout(ct(t) + ' underpass') },
+        '(*term) on the prize': function(t) { callout(ct(t) + ' underpass') },
+        '(*term) under': function(t) { callout(ct(t) + ' underpass') },
+
         //ladder room
-        //ladder
+        '(*term) ladder': function(t) { callout(ct(t) + ' ladder room') },
+        '(*term) letter': function(t) { callout(ct(t) + ' ladder room') },
+        '(*term) letter room': function(t) { callout(ct(t) + ' ladder room') },
+        '(*term) ladder room': function(t) { callout(ct(t) + ' ladder room') },
+
         //vent
+        '(*term) vent': function(t) { callout(ct(t) + ' vent') },
+
         //stove
+        '(*term) stove': function(t) { callout(ct(t) + ' stove') },
+
         //pillars
-        //under palace
+        '(*term) pillars': function(t) { callout(ct(t) + ' pillars') },
+
         //tri box
+        '(*term) tri box': function(t) { callout(ct(t) + ' tri box') },
+        '(*term) triple': function(t) { callout(ct(t) + ' triple') },
+        '(*term) tribox': function(t) { callout(ct(t) + ' tri box') },
+        '(*term) tribal': function(t) { callout(ct(t) + ' tri box') },
+        '(*term) topics': function(t) { callout(ct(t) + ' tri box') },
+        '(*term) trial ox': function(t) { callout(ct(t) + ' tri box') },
+        '(*term) trucks': function(t) { callout(ct(t) + ' tri box') },
+
         //default
-        //site
+        '(*term) default': function(t) { callout(ct(t) + ' default') },
+        '(*term) depot': function(t) { callout(ct(t) + ' default') },
+
         //palm
+        '(*term) palm': function(t) { callout(ct(t) + ' palm tree') },
+        '(*term) palm tree': function(t) { callout(ct(t) + ' palm tree') },
+        '(*term) top free': function(t) { callout(ct(t) + ' palm tree') },
+        '(*term) country': function(t) { callout(ct(t) + ' palm tree') },
+        '(*term) pound tree': function(t) { callout(ct(t) + ' palm tree') },
+
+        //box
+        //boxes
+
+        //market
+        '(*term) market': function(t) { callout(ct(t) + ' market') },
       };
 
       // Add our commands to annyang
