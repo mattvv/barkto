@@ -3,6 +3,7 @@
     <title>Callouts Demo - Mirage</title>
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script>
     var calloutWords = {
       //fire box
@@ -43,6 +44,7 @@
       'CeCe': 'CT',
       'pt': 'CT',
       'pity': 'CT',
+      'city': 'CT',
 
       //stairs
       'stairs': 'stairs',
@@ -79,6 +81,7 @@
       'ram': 'ramp',
       'rack': 'ramp',
       'rat': 'ramp',
+      'rank': 'ramp',
 
       //t spawn
       'spawn': 'spawn',
@@ -91,6 +94,7 @@
       'made': 'mid',
       'maid': 'mid',
       'middle': 'middle',
+      'Middle': 'middle',
 
       //cart
       'cart': 'cart',
@@ -151,68 +155,67 @@
       //market
       'market': 'market'
     }
+    var prefixes = [
+      '1','2','3','4','5','6','7','8','9','all'
+    ]
     function callout(text) {
       text = text.replace(/undefined /i, '');
       $('ul').append("<li>"+text+"</li>")
     }
 
     function ct(term) {
+      console.log('in CT!! ' + term);
       if (typeof(term) === 'undefined') {
         return "";
       }
 
       term = term.trim();
       //todo: term includes intead of term ===
-      if (term === "o" || term === "old" || term === "when" || term === "fun") {
-        return "all";
+      if (term.toLowerCase() === "o" || term.toLowerCase() === "old" || term.toLowerCase() === "when" || term.toLowerCase() === "fun") {
+        term = "all";
       }
 
       //one
-      if (term === "what") {
-        return "one";
+      if (term.toLowerCase() === "what" || term.toLowerCase() === "one") {
+        term = "1";
       }
 
       //two
-      if (term === "to" || term === "too") {
-        return "two";
+      if (term.toLowerCase() === "to" || term.toLowerCase() === "too" || term.toLowerCase() === "two") {
+        term = "2";
       }
 
-      //fire box
-      if (term === "bucks" || term == "Oakes" || term =="hours") {
-        return "fire box";
+      if (term.toLowerCase() === "three") {
+        term = "3";
       }
 
-      //van
-      if (term === "man") {
-        return "van";
+      if (term.toLowerCase() === "four") {
+        term = "4";
       }
 
-      //apts
-      if (term === "apps") {
-        return "apts";
-      }
-
-      //bench and...
-      if (term === "tension") {
-        return "bench and"
-      }
-
-      //ebox
-      if (term === "")
-
-      //site
-      if (term === "side" || term === "sight") {
-        return "site";
+      if (term.toLowerCase() === "five") {
+        term = "5";
       }
 
       //todo: fiter through "Approved words";
-      return term
+      return approvedWords(term);
     }
 
     function approvedWords(term) {
       //the speech recognition comes back jumbled, with worrds we would never say, we need to re-arrange these.
       //this funciton will get the words and translate them from mumbo jumbo into real words! omg!
 
+      //this is where we cut out the fluff.
+      //we need to figure out how to trim the callout down and make it recrusive.
+      if (_.contains(calloutWords, term)) {
+        console.log('we contained a callout word!!');
+        return term;
+      } else if (_.contains(prefixes, term)) {
+        console.log('we contained a prefix');
+        return term;
+      } else {
+        return "";
+      }
     }
 
     if (annyang) {
@@ -220,10 +223,15 @@
 
       Object.keys(calloutWords).forEach(function(key) {
         //use the forEach method to ensure closure.
-        commands[key] = function(t) { callout(ct(t) + ' ' + calloutWords[key] )}
+        speech = '(*term) ' + key;
+        commands[speech] = function(t) {
+          callout(ct(t) + ' ' + calloutWords[key]
+        )}
       });
 
       // Add our commands to annyang
+      console.log(Object.keys(commands).length)
+      console.log(commands);
       annyang.addCommands(commands);
       annyang.debug(true);
       // Start listening.
