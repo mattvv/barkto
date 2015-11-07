@@ -4,6 +4,153 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
     <script>
+    var calloutWords = {
+      //fire box
+      'fire box':'fire box',
+      'firebox': 'fire box',
+      'firefox': 'fire box',
+      'PO Box': 'fire box',
+
+      //van
+      'van':'van',
+      'man':'van',
+
+      'kitchen': 'kitchen',
+      'cat': 'cat',
+      'bat': 'cat',
+      'catwalk': 'catwalk',
+      'window': 'window',
+
+      //apts
+      'apts': 'apts',
+      'apps': 'apts',
+      'apartments': 'apartments',
+
+      //bench
+      'bench': 'bench',
+
+      //site
+      'site': 'site',
+      'sight': 'site',
+      'side': 'site',
+
+      'jungle': 'jungle',
+      'connector': 'connector',
+
+      //ct
+      'CT': 'CT',
+      'c t': 'CT',
+      'CeCe': 'CT',
+      'pt': 'CT',
+      'pity': 'CT',
+
+      //stairs
+      'stairs': 'stairs',
+      'stair': 'stairs',
+      'stay': 'stairs',
+
+      //ticket booth
+      'ticket': 'ticket booth',
+      'booth': 'ticket booth',
+      'birds': 'ticket booth',
+      'ticket booth': 'ticket booth',
+
+      //palace
+      'alice': 'palace',
+      'pallets': 'palace',
+      'palace': 'palace',
+
+      'under alice': 'under palace',
+      'under pallets': 'under pallets',
+      'under palace': 'under palace',
+
+      //tetris
+      'tetris': 'tetris',
+      'texas': 'tetris',
+
+      //sandwich
+      'sandwich': 'sandwich',
+
+      //t ramp
+      't ramp': 't ramp',
+
+      //ramp
+      'ramp': 'ramp',
+      'ram': 'ramp',
+      'rack': 'ramp',
+      'rat': 'ramp',
+
+      //t spawn
+      'spawn': 'spawn',
+      't spawn': 't spawn',
+      'teaspoon': 't spawn',
+
+      //mid
+      'mid': 'mid',
+      'min': 'mid',
+      'made': 'mid',
+      'maid': 'mid',
+      'middle': 'middle',
+
+      //cart
+      'cart': 'cart',
+      'cup': 'cup',
+
+      //underpass
+      'underpass': 'underpass',
+      'on the buss': 'underpass',
+      'on the prize': 'underpass',
+      'undercup': 'underpass',
+      'under': 'underpass',
+
+      //ladder room
+      'ladder': 'ladder room',
+      'letter': 'ladder room',
+      'letter room': 'letter room',
+      'ladder room': 'ladder room',
+
+      //vent
+      'vent': 'vent',
+
+      //stove
+      'stove': 'stove',
+
+      //pillars
+      'pillars': 'pillars',
+
+      //tri box
+      'tri box': 'tri box',
+      'triple': 'triple',
+      'tribox': 'tri box',
+      'tribal': 'tri box',
+      'topics': 'tri box',
+      'trial ox': 'tri box',
+      'trucks': 'tri box',
+
+      //default
+      'default': 'default',
+      'de fault': 'default',
+      'defaults': 'default',
+      'depot': 'default',
+
+      //palm
+      'palm': 'palm tree',
+      'palm tree': 'palm tree',
+      'top free': 'palm tree',
+      'country': 'palm tree',
+      'pound tree': 'palm tree',
+
+      //box
+      //boxes
+      'box': 'box',
+      'bucks': 'box', //todo: change this to box
+      'ounce': 'box',
+      'boxes': 'boxes',
+      'boxers': 'boxes',
+
+      //market
+      'market': 'market'
+    }
     function callout(text) {
       text = text.replace(/undefined /i, '');
       $('ul').append("<li>"+text+"</li>")
@@ -13,6 +160,7 @@
       if (typeof(term) === 'undefined') {
         return "";
       }
+
       term = term.trim();
       //todo: term includes intead of term ===
       if (term === "o" || term === "old" || term === "when" || term === "fun") {
@@ -57,157 +205,23 @@
         return "site";
       }
 
+      //todo: fiter through "Approved words";
       return term
     }
+
+    function approvedWords(term) {
+      //the speech recognition comes back jumbled, with worrds we would never say, we need to re-arrange these.
+      //this funciton will get the words and translate them from mumbo jumbo into real words! omg!
+
+    }
+
     if (annyang) {
-      // Let's define a command.
-      console.log('annyang loaded');
-      var commands = {
-        //fire box
-        '(*term) fire box': function(t) { callout(ct(t) + ' fire box') },
-        '(*term) firebox': function(t) { callout(ct(t) + ' fire box') },
-        '(*term) firefox': function(t) { callout(ct(t) + ' fire box') },
-        '(*term) bucks': function(t) { callout('fire box') },
-        '(*term) Oakes': function(t) { callout('fire box') },
-        '(*term) PO Box': function(t) { callout(ct(t) + ' fire box') },
-        '(*term) hours': function(t) { callout(ct(t) + ' fire box') },
+      var commands = {};
 
-        //van
-        '(*term) van': function(t) { callout(ct(t) + ' van') },
-        '(*term) man': function(t) { callout(ct(t) + ' van') },
-
-        '(*term) kitchen': function(t) { callout(ct(t) + ' kitchen') },
-        '(*term) cat': function(t) { callout(ct(t) + ' cat') },
-        '(*term) catwalk': function(t) { callout(ct(t) + ' catwalk') },
-        '(*term) window': function(t) { callout(ct(t) + ' window') },
-
-        //apts
-        '(*term) apts': function(t) { callout(ct(t) + ' apts') },
-        '(*term) apps': function(t) { callout(ct(t) + ' apts') },
-        '(*term) apartments': function(t) { callout(ct(t) + ' apartments') },
-
-        //ebox
-        '(*term) e box': function(t) { callout(ct(t) + ' e box') },
-        '(*term) ebooks': function(t) { callout(ct(t) + ' e box') },
-        '(*term) inbox': function(t) { callout(ct(t) + ' e box') },
-        '(*term) moneybox': function(t) { callout(ct(t) + ' e box') },
-
-        '(*term) bench': function(t) { callout(ct(t) + ' bench') },
-
-        //site
-        '(*term) site': function(t) { callout(ct(t) + ' site') },
-        '(*term) sight': function(t) { callout(ct(t) + ' site') },
-        '(*term) side': function(t) { callout(ct(t) + ' site') },
-        '(*term) jungle': function(t) { callout(ct(t) + ' jungle') },
-        '(*term) connector': function(t) { callout(ct(t) + ' connector') },
-
-        //ct
-        '(*term) CT': function(t) { callout(ct(t) + ' CT') },
-        '(*term) c t': function(t) { callout(ct(t) + ' CT') },
-        '(*term) CeCe': function(t) { callout(ct(t) + ' CT') },
-        '(*term) pt': function(t) { callout(ct(t) + ' CT') },
-        '(*term) pity': function(t) { callout(ct(t) + ' CT') },
-
-        //stairs
-        '(*term) stairs': function(t) { callout(ct(t) + ' stairs') },
-        '(*term) stair': function(t) { callout(ct(t) + ' stairs') },
-        '(*term) stay': function(t) { callout(ct(t) + ' stairs') },
-
-        //ticket booth
-        '(*term) ticket': function(t) { callout(ct(t) + ' ticket booth') },
-        '(*term) booth': function(t) { callout(ct(t) + ' ticket booth') },
-        '(*term) birds': function(t) { callout(ct(t) + ' ticket booth') },
-        '(*term) ticket booth': function(t) { callout(ct(t) + ' ticket booth') },
-
-        //palace
-        '(*term) alice': function(t) { callout(ct(t) + ' palace') },
-        '(*term) pallets': function(t) { callout(ct(t) + ' palace') },
-        '(*term) palace': function(t) { callout(ct(t) + ' palace') },
-
-        '(*term) under alice': function(t) { callout(ct(t) + ' under palace') },
-        '(*term) under pallets': function(t) { callout(ct(t) + ' under palace') },
-        '(*term) under palace': function(t) { callout(ct(t) + ' under palace') },
-
-        //tetris
-        '(*term) tetris': function(t) { callout(ct(t) + ' tetris') },
-        '(*term) texas': function(t) { callout(ct(t) + ' tetris') },
-
-        //sandwich
-        '(*term) sandwich': function(t) { callout(ct(t) + ' sandwich') },
-
-        //t ramp
-        '(*term) t ramp': function(t) { callout(ct(t) + ' t ramp') },
-
-        //ramp
-        '(*term) ramp': function(t) { callout(ct(t) + ' ramp') },
-        '(*term) ram': function(t) { callout(ct(t) + ' ramp') },
-        '(*term) rack': function(t) { callout(ct(t) + ' ramp') },
-        '(*term) rat': function(t) { callout(ct(t) + ' ramp') },
-
-        //t spawn
-        '(*term) spawn': function(t) { callout(ct(t) + ' spawn') },
-        '(*term) t spawn': function(t) { callout(ct(t) + ' t spawn') },
-        '(*term) teaspoon': function(t) { callout(ct(t) + ' t spawn') },
-
-        //mid
-        '(*term) mid': function(t) { callout(ct(t) + ' mid') },
-        '(*term) min': function(t) { callout(ct(t) + ' mid') },
-        '(*term) middle': function(t) { callout(ct(t) + ' mid') },
-        '(*term) made': function(t) { callout(ct(t) + ' mid') },
-        '(*term) maid': function(t) { callout(ct(t) + ' mid') },
-        '(*term) middle': function(t) { callout(ct(t) + ' middle') },
-
-        //cart
-        '(*term) cart': function(t) { callout(ct(t) + ' cart') },
-        '(*term) cup': function(t) { callout(ct(t) + ' cart') },
-
-        //underpass
-        '(*term) underpass': function(t) { callout(ct(t) + ' underpass') },
-        '(*term) on the bus': function(t) { callout(ct(t) + ' underpass') },
-        '(*term) on the prize': function(t) { callout(ct(t) + ' underpass') },
-        '(*term) under': function(t) { callout(ct(t) + ' underpass') },
-
-        //ladder room
-        '(*term) ladder': function(t) { callout(ct(t) + ' ladder room') },
-        '(*term) letter': function(t) { callout(ct(t) + ' ladder room') },
-        '(*term) letter room': function(t) { callout(ct(t) + ' ladder room') },
-        '(*term) ladder room': function(t) { callout(ct(t) + ' ladder room') },
-
-        //vent
-        '(*term) vent': function(t) { callout(ct(t) + ' vent') },
-
-        //stove
-        '(*term) stove': function(t) { callout(ct(t) + ' stove') },
-
-        //pillars
-        '(*term) pillars': function(t) { callout(ct(t) + ' pillars') },
-
-        //tri box
-        '(*term) tri box': function(t) { callout(ct(t) + ' tri box') },
-        '(*term) triple': function(t) { callout(ct(t) + ' triple') },
-        '(*term) tribox': function(t) { callout(ct(t) + ' tri box') },
-        '(*term) tribal': function(t) { callout(ct(t) + ' tri box') },
-        '(*term) topics': function(t) { callout(ct(t) + ' tri box') },
-        '(*term) trial ox': function(t) { callout(ct(t) + ' tri box') },
-        '(*term) trucks': function(t) { callout(ct(t) + ' tri box') },
-
-        //default
-        '(*term) default': function(t) { callout(ct(t) + ' default') },
-        '(*term) depot': function(t) { callout(ct(t) + ' default') },
-
-        //palm
-        '(*term) palm': function(t) { callout(ct(t) + ' palm tree') },
-        '(*term) palm tree': function(t) { callout(ct(t) + ' palm tree') },
-        '(*term) top free': function(t) { callout(ct(t) + ' palm tree') },
-        '(*term) country': function(t) { callout(ct(t) + ' palm tree') },
-        '(*term) pound tree': function(t) { callout(ct(t) + ' palm tree') },
-
-        //box
-        //boxes
-
-        //market
-        '(*term) market': function(t) { callout(ct(t) + ' market') },
-      };
+      Object.keys(calloutWords).forEach(function(key) {
+        //use the forEach method to ensure closure.
+        commands[key] = function(t) { callout(ct(t) + ' ' + calloutWords[key] )}
+      });
 
       // Add our commands to annyang
       annyang.addCommands(commands);
